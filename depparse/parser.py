@@ -20,13 +20,14 @@
 
 '''Base classes for dependency parsers.'''
 
-import climate
+#import climate
+import logging
 import collections
 import sys
 
 from . import sentence
 
-logging = climate.get_logger(__name__)
+logging = logging.getLogger(__name__)
 
 
 class Parser:

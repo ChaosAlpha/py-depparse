@@ -28,11 +28,12 @@ O(n**2), but in practice Nivre reports O(n) in most cases. Accuracy is
 competitive with current state-of-the-art dependency parsers.
 '''
 
-import climate
+#import climate
+import logging
 
 from . import parser
 
-logging = climate.get_logger(__name__)
+logging = logging.getLogger(__name__)
 
 # parser actions
 SHIFT = 'SHIFT'

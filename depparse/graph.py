@@ -20,10 +20,11 @@
 
 '''Classes for representing and manipulating graphs.'''
 
-import climate
+#import climate
+import logging
 import collections
 
-logging = climate.get_logger(__name__)
+logging = logging.getLogger(__name__)
 
 
 class Digraph:

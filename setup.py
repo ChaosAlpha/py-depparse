@@ -19,8 +19,6 @@ setuptools.setup(
               'nlp '
               'nlproc '
               ),
-    scripts=['scripts/py-depparse'],
-    install_requires=['climate'],
     ext_modules=[setuptools.Extension('depparse._sparse', sources=['src/sparse.c'])],
     classifiers=[
         'Development Status :: 4 - Beta',

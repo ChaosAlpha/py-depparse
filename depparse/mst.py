@@ -35,7 +35,8 @@ something interesting about the fully connected graph that gets constructed
 during the parsing process.
 '''
 
-import climate
+#import climate
+import logging
 import collections
 import math
 import random
@@ -46,7 +47,7 @@ from . import graph
 from . import parser
 from . import sentence
 
-logging = climate.get_logger(__name__)
+logging = logging.getLogger(__name__)
 
 
 class Estimate(parser.Estimate):
